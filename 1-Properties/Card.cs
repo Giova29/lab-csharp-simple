@@ -7,7 +7,6 @@ namespace Properties
     /// </summary>
     public class Card
     {
-
         public string Seed { get; }
         public string Name { get; }
         public int Ordinal { get; }
