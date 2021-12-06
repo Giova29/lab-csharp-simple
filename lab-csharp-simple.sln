@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-Properties", "1-Properties\1-Properties.csproj", "{1E2941E4-363A-4413-98F7-C1EE05100695}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Properties", "1-Properties\1-Properties.csproj", "{1E2941E4-363A-4413-98F7-C1EE05100695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-ComplexAlgebra", "2-ComplexAlgebra\2-ComplexAlgebra.csproj", "{D9B3FDB9-709B-4030-B19E-E7E09B31FD2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-ComplexAlgebra", "2-ComplexAlgebra\2-ComplexAlgebra.csproj", "{D9B3FDB9-709B-4030-B19E-E7E09B31FD2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-Calculus", "3-Calculus\3-Calculus.csproj", "{D33F96E2-D77D-4883-97F7-79F492948528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-Calculus", "3-Calculus\3-Calculus.csproj", "{D33F96E2-D77D-4883-97F7-79F492948528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-Arrays", "4-Arrays\4-Arrays.csproj", "{811ED835-6213-4082-BF02-5FE824FB0DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-Arrays", "4-Arrays\4-Arrays.csproj", "{811ED835-6213-4082-BF02-5FE824FB0DAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-Iterators", "5-Iterators\5-Iterators.csproj", "{FA859A1C-96D7-4C35-BA80-AAA45E2664A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5-Iterators", "5-Iterators\5-Iterators.csproj", "{FA859A1C-96D7-4C35-BA80-AAA45E2664A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-Indexers", "6-Indexers\6-Indexers.csproj", "{BC5A15FB-8E4D-4632-887E-7AC24F16C881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-Indexers", "6-Indexers\6-Indexers.csproj", "{BC5A15FB-8E4D-4632-887E-7AC24F16C881}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexersTests", "6-IndexersTests\IndexersTests.csproj", "{A246532E-E575-4300-B4B0-E20BE7F0ED6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndexersTests", "6-IndexersTests\IndexersTests.csproj", "{A246532E-E575-4300-B4B0-E20BE7F0ED6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,5 +51,11 @@ Global
 		{A246532E-E575-4300-B4B0-E20BE7F0ED6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A246532E-E575-4300-B4B0-E20BE7F0ED6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A246532E-E575-4300-B4B0-E20BE7F0ED6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D82511F-94AD-4E7E-AE32-44B4194AAC10}
 	EndGlobalSection
 EndGlobal
