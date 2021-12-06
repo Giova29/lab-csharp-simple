@@ -25,7 +25,7 @@ namespace Properties
             set => _names = value.ToArray();
         }
 
-        public int GetDeckSize() => _names.Length * _seeds.Length;
+        public int GetDeckSize() => Names.Count * _seeds.Length;
 
         /// TODO improve
         public ISet<Card> GetDeck()
@@ -36,12 +36,12 @@ namespace Properties
             }
 
             return new HashSet<Card>(Enumerable
-                .Range(0, _names.Length)
+                .Range(0, Names.Count)
                 .SelectMany(i => Enumerable
-                    .Repeat(i, _seeds.Length)
+                    .Repeat(i, Seeds.Count)
                     .Zip(
-                        Enumerable.Range(0, _seeds.Length),
-                        (n, s) => Tuple.Create(_names[n], _seeds[s], n)))
+                        Enumerable.Range(0, Seeds.Count),
+                        (n, s) => Tuple.Create(Names[n], Seeds[s], n)))
                 .Select(tuple => new Card(tuple))
                 .ToList());
         }

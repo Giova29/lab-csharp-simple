@@ -7,9 +7,10 @@ namespace Properties
     /// </summary>
     public class Card
     {
-        private readonly string _seed;
-        private readonly string _name;
-        private readonly int _ordinal;
+
+        public string Seed { get; }
+        public string Name { get; }
+        public int Ordinal { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Card"/> class.
@@ -19,9 +20,9 @@ namespace Properties
         /// <param name="ordinal">the ordinal number of the card.</param>
         public Card(string name, string seed, int ordinal)
         {
-            _name = name;
-            _ordinal = ordinal;
-            _seed = seed;
+            Name = name;
+            Ordinal = ordinal;
+            Seed = seed;
         }
 
         /// <summary>
@@ -32,29 +33,23 @@ namespace Properties
         {
         }
 
-        public string GetSeed() => _seed;
-
-        public string GetName() => _name;
-
-        public int GetOrdinal() => _ordinal;
-
         /// <inheritdoc cref="object.ToString"/>
         public override string ToString()
         {
-            return $"{this.GetType().Name}(Name={this.GetName()}, Seed={this.GetSeed()}, Ordinal={this.GetOrdinal()})";
+            return $"{this.GetType().Name}(Name={this.Name}, Seed={this.Seed}, Ordinal={this.Ordinal})";
         }
 
         public override bool Equals(object obj)
         {
             return obj is Card card &&
-                   _seed == card._seed &&
-                   _name == card._name &&
-                   _ordinal == card._ordinal;
+                   Seed == card.Seed &&
+                   Name == card.Name &&
+                   Ordinal == card.Ordinal;
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(_seed, _name, _ordinal);
+            return HashCode.Combine(Seed, Name, Ordinal);
         }
     }
 }
